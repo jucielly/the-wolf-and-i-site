@@ -110,3 +110,14 @@ particlesJS("particles-js", {
 });
 
 
+
+
+
+const handleScroll = (btn, section) =>
+    btn.addEventListener('click', () => {
+        menuCheck.checked = false
+        section.scrollIntoView({
+            behavior: "smooth"
+        })
+
+    })
