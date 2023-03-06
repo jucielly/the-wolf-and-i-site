@@ -15,9 +15,14 @@ canvas {
 /* ---- particles.js container ---- */
 
 #particles-js {
-  position: absolute;
+  position: fixed;
+  top:0;
+  left:0;
+  right: 0;
+  bottom: 0;
   width: 100%;
   height: 100%;
+  z-index: -1;
 }
 
 hr {
@@ -34,7 +39,7 @@ h3 {
 .header {
   display: flex;
   flex-direction: column;
-  background-color: #43373f;
+
 }
 
 .header-nav {
@@ -192,26 +197,44 @@ h3 {
 
 .title-and-links-container,
 .img-and-social-media {
-  width: 50%;
   display: flex;
   flex-direction: column;
   align-self: center;
+}
+
+.img-and-social-media {
+  align-items: center;
+  flex-grow: 1;
 }
 .classification-imgs {
   align-self: flex-start;
 }
 
-
 .wolf-and-i-img {
-  width: 300px;
-  height: 350px;
+  width: 400px;
+  height: 450px;
+  margin-bottom: 16px;
 }
 .rating-img {
   width: 100px;
   height: 80px;
 }
 
-.footer-leaf{
+.footer-leaf {
   width: 150px;
   align-self: end;
+}
+
+.social-medias {
+  display: flex;
+  margin: 16px 0 16px 0;
+}
+
+.footer-links {
+  flex-grow: 1;
+}
+
+.footer-links li {
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
