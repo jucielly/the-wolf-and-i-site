@@ -128,3 +128,4 @@ btn.addEventListener("click", () => {
 });
 
 handleScroll(navGame, gameSection);
+handleScroll(navHome, homeSection)
