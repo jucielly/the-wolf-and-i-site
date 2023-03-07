@@ -19,7 +19,7 @@
     ></script>
   </head>
   <body>
-    <header class="header">
+    <header class="header" id="home">
       <nav class="header-nav">
         <h2 class="nav-title">The Wolf and I</h2>
         <ul class="header-nav-list">
@@ -58,7 +58,31 @@
       <div class="particle-container"></div>
     </header>
 
-    <main></main>
+    <main id="game" class="media-contact-main">
+      <div class="contact-title-container">
+        <img src="/assets/branch2-left.png" alt="branch" />
+        <h3 class="section-titles">Send us a message</h3>
+        <img src="/assets/branch2-right.png" alt="branch" />
+      </div>
+      <form>
+        <input placeholder="Name" class="contact-input" />
+
+        <input placeholder="Name" class="contact-input" />
+
+        <textarea
+          maxlength="1500"
+          placeholder="Message"
+          class="contact-input contact-textearea"
+        ></textarea>
+
+        <div class="checkbox-field">
+          <input name="marketing" type="checkbox" />
+          <label for="marketing">Acept Marketing emails</label>
+        </div>
+
+        <button class="basic-btn">Send Form</button>
+      </form>
+    </main>
 
     <footer class="footer">
       <div class="title-and-links-container">
@@ -120,6 +144,6 @@
     <div id="particles-js"></div>
 
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-    <script src="main.js"></script>
+    <script src="/js/main.js"></script>
   </body>
 </html>

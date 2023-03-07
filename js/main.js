@@ -109,15 +109,22 @@ particlesJS("particles-js", {
   retina_detect: true,
 });
 
+const contactBtn = document.querySelector(".contact-btn");
+const navHome = document.querySelector(".nav-home");
+const navGame = document.querySelector(".nav-game");
+const homeSection = document.querySelector("#home");
+const gameSection = document.querySelector("#game");
 
+contactBtn.addEventListener("click", () => {
+  window.open("/contact.html", "_blank");
+});
 
+const handleScroll = (btn, section) => 
+btn.addEventListener("click", () => {
+  console.log(btn, section);
+  section.scrollIntoView({
+    behavior: "smooth",
+  });
+});
 
-
-const handleScroll = (btn, section) =>
-    btn.addEventListener('click', () => {
-        menuCheck.checked = false
-        section.scrollIntoView({
-            behavior: "smooth"
-        })
-
-    })
+handleScroll(navGame, gameSection);

@@ -16,8 +16,8 @@ canvas {
 
 #particles-js {
   position: fixed;
-  top:0;
-  left:0;
+  top: 0;
+  left: 0;
   right: 0;
   bottom: 0;
   width: 100%;
@@ -39,7 +39,6 @@ h3 {
 .header {
   display: flex;
   flex-direction: column;
-
 }
 
 .header-nav {
@@ -168,6 +167,12 @@ h3 {
   height: 50px;
   border: none;
   text-align: center;
+  transition: 0.3s ease-in;
+}
+
+.basic-btn:hover{
+  background-color: #c4bdef;
+  color: #32292f;
 }
 
 .glow {
@@ -237,4 +242,37 @@ h3 {
 .footer-links li {
   margin-top: 20px;
   margin-bottom: 20px;
+}
+
+.media-contact-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.contact-title-container {
+  display: flex;align-items: center;
+}
+
+.media-contact-main form {
+  margin: 20px 0 100px 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-input {
+  width: 486px;
+  height: 50px;
+  margin: 16px 0 16px 0;
+  border-radius: 12px;
+  color: #32292f;
+  padding: 6px;
+}
+.contact-textearea {
+  height: 316px;
+}
+
+.checkbox-field {
+  margin: 16px 0 16px 0;
 }
