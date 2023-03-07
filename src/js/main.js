@@ -116,7 +116,7 @@ const homeSection = document.querySelector("#home");
 const gameSection = document.querySelector("#game");
 
 contactBtn.addEventListener("click", () => {
-  window.open("/contact.html", "_blank");
+  window.open("contact.html", "_blank");
 });
 
 const handleScroll = (btn, section) => 
