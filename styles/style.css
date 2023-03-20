@@ -48,6 +48,9 @@ h3 {
   display: flex;
   height: 110px;
   align-items: center;
+  z-index: 10;
+  -webkit-animation: text-focus-in 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+  animation: text-focus-in 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
 }
 
 .nav-title {
@@ -111,6 +114,9 @@ h3 {
   right: -100px;
   top: -150px;
   position: relative;
+  z-index: 11;
+  -webkit-animation: text-focus-in 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+  animation: text-focus-in 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
 }
 
 .explore-section-container,
@@ -173,11 +179,18 @@ h3 {
   border: none;
   text-align: center;
   transition: 0.3s ease-in;
+  text-decoration: none;
+  color: #fff;
 }
 
 .basic-btn:hover {
   background-color: #c4bdef;
   color: #32292f;
+  cursor: pointer;
+}
+
+.contact-btn {
+  padding: 16px;
 }
 
 .glow {
@@ -280,6 +293,18 @@ h3 {
   border-radius: 10px;
   margin: 16px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.about-press-release {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 16px;
+
+}
+
+.about-press-release .info {
+  width: 100%;
+  text-align: center;
 }
 
 @-webkit-keyframes glow {
