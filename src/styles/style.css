@@ -48,6 +48,7 @@ h3 {
   display: flex;
   height: 110px;
   align-items: center;
+  z-index: 10;
 }
 
 .nav-title {
@@ -111,6 +112,7 @@ h3 {
   right: -100px;
   top: -150px;
   position: relative;
+  z-index: 11;
 }
 
 .explore-section-container,
@@ -173,11 +175,18 @@ h3 {
   border: none;
   text-align: center;
   transition: 0.3s ease-in;
+  text-decoration: none;
+  color: #fff;
 }
 
 .basic-btn:hover {
   background-color: #c4bdef;
   color: #32292f;
+  cursor: pointer;
+}
+
+.contact-btn {
+  padding: 16px;
 }
 
 .glow {
