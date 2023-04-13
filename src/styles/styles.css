@@ -1,0 +1,73 @@
+body {
+  background-color: #43373f;
+  color: #fff;
+  font-family: "Julius Sans One", sans-serif;
+}
+/* particles */
+/* ---- reset ---- */
+
+canvas {
+  display: block;
+  vertical-align: bottom;
+}
+
+/* ---- particles.js container ---- */
+
+#particles-js {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.text-glow {
+  text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #c4bdef, 0 0 40px #c4bdef,
+    0 0 50px #c4bdef, 0 0;
+}
+
+.styled-bg-dark {
+  background-color: #32292f;
+}
+
+.styled-bg-medium {
+  background-color: #575366;
+}
+
+.nav-bar-title {
+  margin: 0 20px 0 20px;
+  font-weight: lighter;
+}
+
+.leafs-imgs-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.lumi-marja-img {
+  top: -150px;
+  position: relative;
+  z-index: 1031;
+  -webkit-animation: text-focus-in 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+  animation: text-focus-in 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+}
+
+.header-container {
+  margin-top: 107px;
+}
+
+.title-leaf-container {
+    display: flex;
+    align-items: center;
+  }
+
+/* mobile */
+
+@media (max-width: 768px) {
+  .lumi-marja-img {
+    display: none;
+  }
+}
