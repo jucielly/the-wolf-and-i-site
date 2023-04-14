@@ -29,6 +29,16 @@ canvas {
     0 0 50px #c4bdef, 0 0;
 }
 
+.glow-hover:hover {
+  text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #c4bdef, 0 0 40px #c4bdef,
+    0 0 50px #c4bdef, 0 0 60px #c4bdef, 0 0 70px #c4bdef;
+  cursor: pointer;
+}
+
+.margin-bottom-md {
+  margin-bottom: 100px;
+}
+
 .styled-bg-dark {
   background-color: #32292f;
 }
@@ -60,13 +70,87 @@ canvas {
 }
 
 .title-leaf-container {
-    display: flex;
-    align-items: center;
-  }
+  display: flex;
+  align-items: center;
+}
+
+.marja-pose-1 {
+  height: 550px;
+}
+
+.btn-hover:hover {
+  background-color: #c4bdef;
+  color: #32292f;
+  cursor: pointer;
+}
+
+/*revisar*/
+.footer {
+  background-color: #32292f;
+  display: flex;
+  align-items: stretch;
+  width: 100%;
+}
+
+.title-and-links-container,
+.img-and-social-media {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+}
+
+.img-and-social-media {
+  align-items: center;
+  flex-grow: 1;
+}
+.classification-imgs {
+  align-self: flex-start;
+}
+
+.wolf-and-i-img {
+  width: 400px;
+  height: 450px;
+  margin-bottom: 16px;
+}
+.rating-img {
+  width: 100px;
+  height: 80px;
+}
+
+.footer-leaf {
+  width: 150px;
+  align-self: end;
+}
+
+.social-medias {
+  display: flex;
+  margin: 16px 0 16px 0;
+}
+
+.footer-links {
+  flex-grow: 1;
+}
+
+.footer-links li {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
 
 /* mobile */
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
+  .header-leafs {
+    display: none;
+  }
+}
+
+@media (min-width: 992px) {
+  .styled-nav-options {
+    margin-right: 300px;
+  }
+}
+
+@media (max-width: 881px) {
   .lumi-marja-img {
     display: none;
   }
