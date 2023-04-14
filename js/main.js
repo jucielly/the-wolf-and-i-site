@@ -111,11 +111,17 @@ window.addEventListener("load", () => {
   });
 
   const navHome = document.querySelector(".nav-home");
-  const navGame = document.querySelector(".nav-game");
+  const navHistory = document.querySelector(".nav-history");
+  const navGalery = document.querySelector(".nav-galery");
+  const navAbout = document.querySelector(".nav-about");
+  const navMedia = document.querySelector(".nav-media");
+  const navContact = document.querySelector(".nav-contact");
   const homeSection = document.querySelector("#home");
-  const gameSection = document.querySelector("#game");
-
-
+  const historySection = document.querySelector("#history");
+  const galerySection = document.querySelector("#galery");
+  const aboutSection = document.querySelector("#about");
+  const mediaSection = document.querySelector("#media");
+  const contactSection = document.querySelector("#contact");
 
   const handleScroll = (btn, section) =>
     btn.addEventListener("click", () => {
@@ -125,6 +131,10 @@ window.addEventListener("load", () => {
       });
     });
 
-  handleScroll(navGame, gameSection);
   handleScroll(navHome, homeSection);
+  handleScroll(navHistory, historySection);
+  handleScroll(navGalery, galerySection);
+  handleScroll(navAbout, aboutSection);
+  handleScroll(navMedia, mediaSection);
+  handleScroll(navContact, contactSection);
 });

@@ -1,0 +1,260 @@
+body {
+  background-color: #43373f;
+  color: #fff;
+  font-family: "Julius Sans One", sans-serif;
+}
+
+hr {
+  margin: 40px 0 40px 0;
+  box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #c4bdef, 0 0 40px #c4bdef,
+    0 0 50px #c4bdef, 0 0 60px #c4bdef, 0 0 70px #c4bdef;
+}
+/* particles */
+/* ---- reset ---- */
+
+canvas {
+  display: block;
+  vertical-align: bottom;
+}
+
+/* ---- particles.js container ---- */
+
+#particles-js {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.text-glow {
+  text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #c4bdef, 0 0 40px #c4bdef,
+    0 0 50px #c4bdef, 0 0;
+}
+
+.glow-hover:hover {
+  text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #c4bdef, 0 0 40px #c4bdef,
+    0 0 50px #c4bdef, 0 0 60px #c4bdef, 0 0 70px #c4bdef;
+  cursor: pointer;
+}
+
+.margin-bottom-md {
+  margin-bottom: 100px;
+}
+
+.styled-bg-dark {
+  background-color: #32292f;
+}
+
+.styled-bg-medium {
+  background-color: #575366;
+}
+
+.glow-animation {
+  color: #fff;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+.fade-in-animation {
+  -webkit-animation: text-focus-in 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+  animation: text-focus-in 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+}
+
+.nav-bar-title {
+  margin: 0 20px 0 20px;
+  font-weight: lighter;
+}
+
+.leafs-imgs-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.lumi-marja-img {
+  top: -72px;
+  right: 139px;
+  position: relative;
+  z-index: 100;
+}
+
+.header-container {
+  margin-top: 107px;
+}
+
+.title-leaf-container {
+  display: flex;
+  align-items: center;
+}
+
+.marja-pose-1 {
+  height: 550px;
+}
+
+.btn-hover:hover {
+  background-color: #c4bdef;
+  color: #32292f;
+  cursor: pointer;
+}
+
+.social-medias {
+  display: flex;
+  margin: 16px 0 16px 0;
+  align-self: center;
+}
+
+.rights {
+  align-self: center;
+}
+
+.footer {
+  background-color: #32292f;
+  display: flex;
+  align-items: stretch;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.nav-title {
+  font-size: 2rem;
+  margin: 0 20px 0 20px;
+  font-weight: lighter;
+  text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #c4bdef, 0 0 40px #c4bdef,
+    0 0 50px #c4bdef, 0 0 60px #c4bdef, 0 0 70px #c4bdef; /*glow effect */
+}
+
+.title-and-links-container,
+.img-and-social-media {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+}
+
+.classification-imgs {
+  align-self: center;
+}
+
+.wolf-and-i-img {
+  width: 400px;
+  height: 450px;
+  margin-bottom: 16px;
+}
+
+.nav-link {
+  margin: 0 20px 0 20px;
+  font-size: 1.5rem;
+  transition: 0.3s ease-in;
+  text-decoration: none;
+  color: #fff;
+}
+.rating-img {
+  width: 100px;
+  height: 80px;
+}
+
+.footer-leaf {
+  width: 150px;
+  align-self: end;
+}
+
+.footer-links {
+  flex-grow: 1;
+}
+
+.footer-links li {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.stores-container {
+  flex-wrap: wrap;
+}
+
+/* mobile */
+
+@media (max-width: 1117px) {
+  .header-leafs {
+    display: none;
+  }
+
+  .lumi-marja-img {
+    display: none;
+  }
+}
+
+@media (min-width: 992px) {
+  .styled-nav-options {
+    margin-right: 300px;
+  }
+}
+
+@media (max-width: 889px) {
+  .footer-leafs {
+    display: none;
+  }
+}
+
+@media (max-width: 700px) {
+  .footer {
+    flex-direction: column;
+    justify-content: space-around;
+  }
+}
+
+@media (max-width: 672px) {
+  .leafs-imgs-container {
+    display: none;
+  }
+}
+
+@media (max-width: 570px) {
+  .cards-characters {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .title-leaf {
+    display: none;
+  }
+}
+
+/*animations*/
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #c4bdef,
+      0 0 40px #c4bdef, 0 0 50px #c4bdef, 0 0 60px #c4bdef, 0 0 70px #c4bdef;
+  }
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #e1def7, 0 0 40px #e1def7,
+      0 0 50px #e1def7, 0 0 60px #e1def7, 0 0 70px #e1def7, 0 0 80px #e1def7;
+  }
+}
+
+@-webkit-keyframes text-focus-in {
+  0% {
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+    opacity: 1;
+  }
+}
+@keyframes text-focus-in {
+  0% {
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+    opacity: 1;
+  }
+}
