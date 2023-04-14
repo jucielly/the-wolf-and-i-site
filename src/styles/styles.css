@@ -76,11 +76,10 @@ canvas {
 }
 
 .lumi-marja-img {
-  top: -150px;
+  top: -72px;
+  right: 139px;
   position: relative;
-  z-index: 1031;
-  -webkit-animation: text-focus-in 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
-  animation: text-focus-in 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+  z-index: 100;
 }
 
 .header-container {
@@ -177,7 +176,7 @@ canvas {
 
 /* mobile */
 
-@media (max-width: 1024px) {
+@media (max-width: 1117px) {
   .header-leafs {
     display: none;
   }
