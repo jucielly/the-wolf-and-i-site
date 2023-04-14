@@ -23,6 +23,7 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="stylesheet" href="styles/normalize.css" />
   </head>
   <body>
     <header>
@@ -50,7 +51,10 @@
         >
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active text-white glow-hover" aria-current="page" href="#"
+              <a
+                class="nav-link active text-white glow-hover"
+                aria-current="page"
+                href="#"
                 >Home</a
               >
             </li>
@@ -98,7 +102,9 @@
 
           <div class="col-md">
             <div class="container d-flex flex-column gap-5">
-              <h1 class="text-glow">Let the magic begins</h1>
+              <h1 class="text-glow display-1 glow-animation">
+                Let the magic begins
+              </h1>
               <span class="col-sm">
                 Embark on an epic journey with Marja and Lumi, a girl and her
                 loyal wolf companion, as they brave the dangers of a stunningly
@@ -113,17 +119,19 @@
             </div>
           </div>
 
-          <img
+          <!-- <img
             src="assets/lumi-and-marja 2.png"
             alt="girl enroled with a wolf"
             class="lumi-marja-img col-sm"
-          />
+          /> -->
         </div>
       </div>
     </header>
 
     <main>
-      <section class="container-fluid d-flex flex-row margin align-items-center margin-bottom-md ">
+      <section
+        class="container-fluid d-flex flex-row margin align-items-center margin-bottom-md"
+      >
         <div class="leafs-imgs-container">
           <img
             src="assets/left-leaf.png"
@@ -145,7 +153,7 @@
           />
         </div>
         <div class="mx-auto p-2">
-          <h3 class="text-center">A history about connection</h3>
+          <h3 class="text-center display-5">A history about connection</h3>
           <p>
             Join Marja and Lumi as they venture into a mystical Nordic forest to
             uncover the secrets of ancient spirits. Along the way, you'll
@@ -185,17 +193,19 @@
       </section>
 
       <section
-        class="container-fluid d-flex flex-column justify-content-center margin margin-bottom-md "
+        class="container-fluid d-flex flex-column justify-content-center margin margin-bottom-md"
       >
         <div class="title-leaf-container mx-auto p-2">
           <img
+            class="title-leaf"
             src="assets/branch2-left.png"
             alt="branch"
             width="128"
             height="128"
           />
-          <h3 class="section-titles">Characters</h3>
+          <h3 class="section-titles text-center display-5">Characters</h3>
           <img
+            class="title-leaf"
             src="assets/branch2-right.png"
             alt="branch"
             width="128"
@@ -203,8 +213,11 @@
           />
         </div>
 
-        <div class="row mx-auto p-2 gap-5">
-          <div class="card col" style="width: 18rem">
+        <div class="row mx-auto p-2 gap-5 cards-characters">
+          <div
+            class="card col styled-bg-medium text-white"
+            style="width: 18rem"
+          >
             <img
               src="assets/Marja-face1 2.png"
               class="card-img-top"
@@ -216,11 +229,13 @@
                 Some quick example text to build on the card title and make up
                 the bulk of the card's content.
               </p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
             </div>
           </div>
 
-          <div class="card col" style="width: 18rem">
+          <div
+            class="card col styled-bg-medium text-white"
+            style="width: 18rem"
+          >
             <img src="assets/lumi-face1.png" class="card-img-top" alt="..." />
             <div class="card-body">
               <h5 class="card-title">Marja</h5>
@@ -228,24 +243,25 @@
                 Some quick example text to build on the card title and make up
                 the bulk of the card's content.
               </p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
             </div>
           </div>
         </div>
       </section>
 
       <section
-        class="container-fluid d-flex flex-column justify-content-center margin margin-bottom-md "
+        class="container-fluid d-flex flex-column justify-content-center margin margin-bottom-md"
       >
         <div class="title-leaf-container mx-auto p-2">
           <img
+            class="title-leaf"
             src="assets/branch2-left.png"
             alt="branch"
             width="128"
             height="128"
           />
-          <h3 class="section-titles">Galery</h3>
+          <h3 class="section-titles text-center display-5">Galery</h3>
           <img
+            class="title-leaf"
             src="assets/branch2-right.png"
             alt="branch"
             width="128"
@@ -313,7 +329,7 @@
       </section>
 
       <section
-        class="container-fluid d-flex flex-row margin align-items-center margin-bottom-md "
+        class="container-fluid d-flex flex-row margin align-items-center margin-bottom-md"
       >
         <div class="leafs-imgs-container">
           <img
@@ -336,7 +352,7 @@
           />
         </div>
         <div class="">
-          <h3 class="text-center">About</h3>
+          <h3 class="text-center display-5">About</h3>
           <p>
             Developed by Team Xu, powered by the Unity technology and featuring
             side-scrolling gameplay with RPG elements that will keep you coming
@@ -388,17 +404,19 @@
       </section>
 
       <section
-        class="container-fluid d-flex flex-column justify-content-center margin margin-bottom-md "
+        class="container-fluid d-flex flex-column justify-content-center margin margin-bottom-md"
       >
         <div class="title-leaf-container mx-auto p-2">
           <img
+            class="title-leaf"
             src="assets/branch2-left.png"
             alt="branch"
             width="128"
             height="128"
           />
-          <h3 class="section-titles">Media</h3>
+          <h3 class="section-titles text-center display-5">Media</h3>
           <img
+            class="title-leaf"
             src="assets/branch2-right.png"
             alt="branch"
             width="128"
@@ -434,17 +452,22 @@
       </section>
 
       <section
-        class="container-fluid d-flex flex-column justify-content-center margin margin-bottom-md "
+        id="contact-section"
+        class="container-fluid d-flex flex-column justify-content-center margin margin-bottom-md"
       >
         <div class="title-leaf-container mx-auto p-2">
           <img
+            class="title-leaf"
             src="assets/branch2-left.png"
             alt="branch"
             width="128"
             height="128"
           />
-          <h3 class="section-titles">Send us a message</h3>
+          <h3 class="section-titles text-center display-5">
+            Send us a message
+          </h3>
           <img
+            class="title-leaf"
             src="assets/branch2-right.png"
             alt="branch"
             width="128"
@@ -452,61 +475,58 @@
           />
         </div>
 
-        <div class="row">
-          <img
-            src="assets/marja-pose-1 1.png"
-            alt="..."
-            class="col marja-pose-1"
-          />
+        <form class="col align-self-center">
+          <div class="mb-3">
+            <label for="nameInput" class="form-label">Name</label>
+            <input type="text" class="form-control" id="nameInput" />
+          </div>
 
-          <form class="col">
-            <div class="mb-3">
-              <label for="nameInput" class="form-label">Name</label>
-              <input type="text" class="form-control" id="nameInput" />
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Email</label>
+            <input
+              type="email"
+              class="form-control"
+              id="exampleInputEmail1"
+              aria-describedby="emailHelp"
+            />
+            <div id="emailHelp" class="form-text text-white">
+              We'll never share your email with anyone else.
             </div>
+          </div>
 
-            <div class="mb-3">
-              <label for="exampleInputEmail1" class="form-label">Email</label>
-              <input
-                type="email"
-                class="form-control"
-                id="exampleInputEmail1"
-                aria-describedby="emailHelp"
-              />
-              <div id="emailHelp" class="form-text text-white">
-                We'll never share your email with anyone else.
-              </div>
-            </div>
+          <div class="mb-3">
+            <label for="messageInput" class="form-label">Message</label>
 
-            <div class="mb-3">
-              <label for="messageInput" class="form-label">Message</label>
+            <textarea
+              id="messageInput"
+              class="form-control"
+              maxlength="1500"
+              placeholder="Write your message"
+              class="contact-input contact-textearea"
+            ></textarea>
+          </div>
 
-              <textarea
-                id="messageInput"
-                class="form-control"
-                maxlength="1500"
-                placeholder="Write your message"
-                class="contact-input contact-textearea"
-              ></textarea>
-            </div>
-
-            <div class="mb-3 form-check">
-              <input
-                type="checkbox"
-                class="form-check-input"
-                id="exampleCheck1"
-              />
-              <label class="form-check-label" for="exampleCheck1"
-                >Check me out</label
-              >
-            </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
-          </form>
-        </div>
+          <div class="mb-3 form-check">
+            <input
+              type="checkbox"
+              class="form-check-input"
+              id="exampleCheck1"
+            />
+            <label class="form-check-label" for="exampleCheck1"
+              >Check me out</label
+            >
+          </div>
+          <button
+            type="submit"
+            class="btn btn styled-bg-dark text-white btn-hover align-self-start btn-lg"
+          >
+            Submit
+          </button>
+        </form>
       </section>
     </main>
 
-    <!-- <footer class="container-fluid footer">
+    <footer class="footer">
       <div class="title-and-links-container">
         <h4 class="nav-title">The Wolf and I</h4>
         <ul class="footer-links">
@@ -545,10 +565,10 @@
             ></a>
           </li>
         </ul>
-        <span>©2023 Xu. All Rights Reserved</span>
+        <span class="rights">©2023 Xu. All Rights Reserved</span>
       </div>
 
-      <div class="imgs-container">
+      <div class="leafs-imgs-container footer-leafs">
         <img
           src="assets/right-leaf.png"
           alt="branch of leaf"
@@ -561,7 +581,7 @@
         />
         <img src="assets/green-tea (1) 1.png"" alt=" branch of leaf" />
       </div>
-    </footer> -->
+    </footer>
 
     <div id="particles-js"></div>
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
